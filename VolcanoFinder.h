@@ -14,29 +14,33 @@
 #define BIG_ENOUGH 12.0
 
 struct datatype {
-  double loc, baselike;
-  int x;
-  int n;
-  int folded;
-} *data;
+    double loc, baselike;
+    int x;
+    int n;
+    int folded;
+};
+
+extern struct datatype *data;
 
 extern int datasize;
 extern int nmax, nmin, xmax;
 extern int sweep_width;
 extern int invar;
 
-
 struct datatype_rec {
-	double loc, rate;
-} *data_rec;
+    double loc, rate;
+};
+
+extern struct datatype_rec *data_rec;
 
 extern int datasize_rec;
 extern double recratemin, recratemax;
 
-
 struct datatype_bvalue {
-	double loc, bvalue;
-} *data_bvalue;
+    double loc, bvalue;
+};
+
+extern struct datatype_bvalue *data_bvalue;
 
 extern int datasize_bvalue;
 extern double bvaluemin, bvaluemax;
