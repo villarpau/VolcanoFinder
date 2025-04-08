@@ -37,6 +37,9 @@ int alpha_grid_flag = 1;
 double *vals_int;
 double *likes_int;
 
+struct datatype *data;
+struct datatype_rec *data_rec;
+struct datatype_bvalue *data_bvalue;
 
 void InitFact(void) 
 {	
